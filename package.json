@@ -17,5 +17,9 @@
     "dotenv": "^17.2.3",
     "express": "^5.1.0",
     "mongodb": "^6.20.0"
+  },
+   "engines": {
+    "node": "18.x",
+    "npm": "9.x"
   }
 }

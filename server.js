@@ -4,6 +4,10 @@ const PORT = process.env.PORT || 3000;
 const routes = require('./routes');
 const mongobd = require('./db/connect');
 
+app.set('trust proxy', 1);
+app.use('/', routes);
+app.use('/api', require('./routes/api'));
+
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
 });
@@ -18,6 +22,3 @@ mongobd.connectDB((err) => {
     console.log('MongoDB connection established');
 })
 
-
-app.use('/', routes);
-app.use('/api', require('./routes/api'));
