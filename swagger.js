@@ -7,7 +7,8 @@ const doc = {
         version: '1.0.0',
     },
     host: 'contacts-2nvl.onrender.com/api',
-    schemes: ['http'],
+    
+    schemes: ['https, http'],
 };
 const outputFile = './swagger.json';
 const endpointsFiles = ['./routes/api/index.js'];
