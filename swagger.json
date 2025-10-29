@@ -8,7 +8,7 @@
   "host": "contacts-2nvl.onrender.com/api",
   "basePath": "/",
   "schemes": [
-    "http"
+    "https"
   ],
   "paths": {
     "/": {
